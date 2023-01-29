@@ -1,0 +1,73 @@
+.start__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #212529;
+  gap: 4rem;
+}
+
+.div__slogan {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.div__slogan > img {
+  width: 50%;
+  height: 50%;
+}
+
+.div__slogan > h1 {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 38px;
+  line-height: 48px;
+
+  color: #ffffff;
+}
+
+.div__slogan > p {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 26px;
+
+  color: #ffffff;
+}
+
+.start__btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 13px 20px;
+  gap: 10px;
+
+  position: absolute;
+  width: 241px;
+  height: 48px;
+  left: 256px;
+  top: 490px;
+
+  /* color-primary */
+
+  background: #fd377e;
+  /* color-primary */
+
+  border: 2px solid #fd377e;
+  border-radius: 8px;
+}
+
+@media (min-width: 769px) {
+  .start__container {
+    flex-direction: row;
+  }
+}
