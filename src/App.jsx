@@ -32,6 +32,9 @@ function App() {
         type: "",
         value: "",
       });
+      if (newFormat.type === "Despesa") {
+        newFormat.value = newFormat.value * -1;
+      }
     } else {
       alert("Preencha todos os campos");
     }
