@@ -24,7 +24,7 @@ export const Card = ({
           <div className="div__value">
             <span className="card__value">R$ {transaction.value}</span>
             <Button className={"card__btn"} func={() => removeTrasaction()}>
-              <img src="/src/assets/trash.svg" alt="" />
+              <img src={trash} alt="" />
             </Button>
           </div>
         </li>
