@@ -1,7 +1,7 @@
 import "/src/components/startPage/start.css";
 import "/src/components/button/style.css";
 import { Button } from "../button";
-import LogoOne from "../../assets/Nu Kenzie second.svg";
+import LogoOne from "../../assets/Nu Kenzie first.svg";
 
 export const StartPage = ({ setPage }) => {
   const switchToDash = () => {
