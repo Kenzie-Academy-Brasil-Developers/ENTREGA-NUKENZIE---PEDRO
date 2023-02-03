@@ -235,6 +235,20 @@
   border-radius: 4px;
 }
 
+.card__container-expense {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0.75rem;
+  gap: 1.2rem;
+  margin-bottom: 1rem;
+
+  height: 156px;
+
+  background: #f8f9fa;
+  border-left: 4px solid #e9ecef;
+  border-radius: 4px;
+}
+
 .div__title {
   display: flex;
   flex-direction: column;
@@ -321,6 +335,12 @@
   }
 
   .card__container {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 87px;
+  }
+
+  .card__container-expense {
     flex-direction: row;
     justify-content: space-between;
     height: 87px;

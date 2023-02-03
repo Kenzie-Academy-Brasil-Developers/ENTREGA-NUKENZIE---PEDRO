@@ -2,6 +2,7 @@ import { Card } from "../card";
 import { Form } from "../forms";
 import { Header } from "../header";
 import { TotalValue } from "../total";
+import EmptyList from "../../assets/emptyList.svg";
 
 export const Dashboard = ({
   submit,
@@ -27,11 +28,7 @@ export const Dashboard = ({
               <h1 className="empty__list">
                 Você ainda não possui nenhum lançamento
               </h1>
-              <img
-                className="empty__img"
-                src="/src/assets/emptyList.svg"
-                alt="Listas vazias"
-              />
+              <img className="empty__img" src={EmptyList} alt="Listas vazias" />
             </>
           ) : (
             <ul>

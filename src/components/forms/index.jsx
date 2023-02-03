@@ -1,3 +1,6 @@
+import { Button } from "../button";
+import "/src/components/button/style.css";
+
 export const Form = ({ submit, format, setFormat }) => {
   return (
     <form className="form__section" onSubmit={submit}>
@@ -51,9 +54,9 @@ export const Form = ({ submit, format, setFormat }) => {
           </select>
         </div>
       </div>
-      <button className="button" type="submit">
+      <Button className={"button"} type="submit">
         Inserir valor
-      </button>
+      </Button>
     </form>
   );
 };

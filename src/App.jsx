@@ -1,8 +1,8 @@
 import { useState } from "react";
 import "./App.css";
-import "/src/components/button/style.css";
 import { Dashboard } from "./components/dashboard";
 import { StartPage } from "./components/startPage";
+import { v4 as uuidv4 } from "uuid";
 
 function App() {
   const [listTransactions, setListTransactions] = useState([]);
@@ -20,12 +20,21 @@ function App() {
 
   const submit = (event) => {
     event.preventDefault();
-    setListTransactions([...listTransactions, format]);
-    setFormat({
-      description: "",
-      type: "",
-      value: "",
-    });
+    if (
+      format.description !== "" &&
+      format.type !== "" &&
+      format.value !== ""
+    ) {
+      const newFormat = { ...format, id: uuidv4() };
+      setListTransactions([...listTransactions, newFormat]);
+      setFormat({
+        description: "",
+        type: "",
+        value: "",
+      });
+    } else {
+      alert("Preencha todos os campos");
+    }
   };
 
   const [page, setPage] = useState(false);

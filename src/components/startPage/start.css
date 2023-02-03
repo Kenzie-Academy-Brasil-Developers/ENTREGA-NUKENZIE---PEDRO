@@ -3,9 +3,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
   background-color: #212529;
   gap: 4rem;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
 }
 
 .div__slogan {
@@ -49,25 +50,42 @@
   justify-content: center;
   align-items: center;
   padding: 13px 20px;
-  gap: 10px;
+  gap: 0.625rem;
 
-  position: absolute;
-  width: 241px;
+  width: 100%;
+  max-width: 425px;
   height: 48px;
-  left: 256px;
-  top: 490px;
-
-  /* color-primary */
 
   background: #fd377e;
-  /* color-primary */
 
   border: 2px solid #fd377e;
   border-radius: 8px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.188rem;
+
+  color: #ffffff;
+}
+
+.img__Illus {
+  width: 75%;
+  height: 50%;
 }
 
 @media (min-width: 769px) {
   .start__container {
     flex-direction: row;
+  }
+
+  .start__container {
+    height: 100vh;
+  }
+
+  .img__Illus {
+    width: 50%;
+    height: 80%;
   }
 }

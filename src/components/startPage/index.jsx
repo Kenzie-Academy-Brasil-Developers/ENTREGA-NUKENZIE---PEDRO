@@ -1,5 +1,7 @@
 import "/src/components/startPage/start.css";
 import "/src/components/button/style.css";
+import { Button } from "../button";
+import LogoOne from "../../assets/Illustration.svg";
 
 export const StartPage = ({ setPage }) => {
   const switchToDash = () => {
@@ -15,11 +17,11 @@ export const StartPage = ({ setPage }) => {
           finanças
         </h1>
         <p>de forma rápida e segura</p>
-        <button className="button" onClick={switchToDash}>
+        <Button className={"start__btn"} func={switchToDash}>
           iniciar
-        </button>
+        </Button>
       </div>
-      <img src="/src/assets/Illustration.svg" alt="Ilustração" />
+      <img className="img__Illus" src={LogoOne} alt="Ilustração" />
     </main>
   );
 };
